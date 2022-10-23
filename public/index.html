@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.css">
     <style>
+        body { background: navy !important; }
         span {margin:5px;}
     </style>
 </head>
@@ -19,7 +20,7 @@
 
 <div ng-controller="mainController">
     <div class="container well mtp75">
-        <span ng-click="emptyInput()" data-toggle="modal" data-target="#userModal" class="btn btn-success pull-right">Add New User</span>
+        <span ng-click="emptyInput()" data-toggle="modal" data-target="#userModal" class="btn btn-success pull-right">Add New Student</span>
         <div class="row"></div>
         <br>
         <table cellpadding=10 cellspacing=10 border=0 class="table">
@@ -47,8 +48,8 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 ng-show="enableEditForm" class="modal-title">Edit User</h4>
-                        <h4 ng-show="!enableEditForm" class="modal-title">Add User</h4>
+                        <h4 ng-show="enableEditForm" class="modal-title">Edit Student</h4>
+                        <h4 ng-show="!enableEditForm" class="modal-title">Add Student</h4>
                     </div>
 
                     <div class="modal-body">
